@@ -1,0 +1,13 @@
+const express = require('express')
+const dotenv = require('dotenv').config()
+const port = process.env.PORT || 2121
+
+const app = express()
+
+// Enable body parser
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
+
+app.use('/openai', require('./routes/openaiRoutes'))
+
+app.listen(port, () => console.log(`Server is running on port ${port}. You better go Catch it! 🏃‍♀️💨`))
