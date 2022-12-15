@@ -2,6 +2,8 @@
 
 This is a simple image generator built with Node.js and Express that uses [OpenAI's Dall-E models](https://beta.openai.com/docs/guides/images) to generate images.
 
+[Live demo](https://hg-openai-image-generator.up.railway.app/)
+
 <img src="public/img/screen.jpg" width="500">
 
 ## Usage
